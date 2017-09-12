@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Doctor</string>
+    <string name="myprofile">My profile</string>
+    <string name="allappointments">All appointments</string>
+    <string name="movecancel">Move / Cancel</string>
+    <string name="referandearn">Refer and earn</string>
+    <string name="outofoffice">Out of office</string>
+    <string name="appsetting">App setting</string>
+    <string name="subandpur">Subscription and purchase</string>
+    <string name="mypriclinic">My primary clinic</string>
+    <string name="support">Support</string>
+    <string name="open">Open</string>
+    <string name="close">close</string>
+    <string name="doctor">Doctor</string>
+    <string name="descinmainactivity">Your Appointment</string>
+    <string name="descinmainactivity2">Manager</string>
+
+
+    <string name="firstname"><font size="10">First Name</font></string>
+    <string name="lastname"><font size="10">Last Name</font></string>
+    <string name="speciality"><font size="10">Speciality</font></string>
+    <string name="location"><font size="10">Location</font></string>
+    <string name="dob"><font size="10">Date of Birth</font></string>
+    <string name="mobileno"><font size="10">Mobile no</font></string>
+    <string name="pin"><font size="10">Pin Code</font></string>
+    <string name="age"><font size="10">Age</font></string>
+    <string name="nameofclinic">Name of Primary Clinic / Hospital</string>
+    <string name="no_of_slots">No of slots</string>
+    <string name="afterslots">after slots</string>
+    <string name="code">Code</string>
+    <string name="netbanking"><u>Net banking</u></string>
+    <string name="noteforreferandearn">All subscriptions are null and void after 360days of purchase.</string>
+
+
+</resources>

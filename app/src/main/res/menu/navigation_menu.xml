@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/myprofile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/myprofile"/>
+    <item android:id="@+id/allappointments"
+        android:icon="@drawable/ic_accessibility_black_24dp"
+        android:title="@string/allappointments"/>
+    <item android:id="@+id/movecancel"
+        android:icon="@drawable/ic_cancel_black_24dp"
+        android:title="@string/movecancel"/>
+    <item android:id="@+id/referandearn"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:title="@string/referandearn"/>
+    <item android:id="@+id/outofoffice"
+        android:icon="@drawable/ic_event_busy_black_24dp"
+        android:title="@string/outofoffice"/>
+    <item android:id="@+id/appsetting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/appsetting"/>
+    <item android:id="@+id/subandpur"
+        android:icon="@drawable/ic_subscriptions_black_24dp"
+        android:title="@string/subandpur"/>
+    <item android:id="@+id/mypriclinic"
+        android:icon="@drawable/ic_local_hospital_black_24dp"
+        android:title="@string/mypriclinic"/>
+    <item android:id="@+id/support"
+        android:icon="@drawable/ic_thumb_up_black_24dp"
+        android:title="@string/support"/>
+
+</menu>

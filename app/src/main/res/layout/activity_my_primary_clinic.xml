@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avolatile.ultimate.doctor.MyPrimaryClinic">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                layout="@layout/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#FF6200" />
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="#C5C5D5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:shadowColor="#a4a4a4"
+                    android:shadowDy="-5"
+                    android:shadowRadius="5"
+                    android:text="MY PRIMARY CLINIC"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/doctorname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="#FFCC80"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:shadowColor="#a4a4a4"
+                    android:shadowDy="-5"
+                    android:shadowRadius="5"
+                    android:text="DR."
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/nameofclinic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:background="@drawable/fillcolor"
+                android:hint="@string/nameofclinic"
+                android:textSize="12dp"
+                android:inputType="text"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/speciality_clinic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/fillcolor"
+                    android:hint="@string/speciality"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:inputType="text"/>
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/fillcolor"
+                    android:hint="@string/firstname"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/location_clinic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/fillcolor"
+                    android:hint="@string/location"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:inputType="text"/>
+                <EditText
+                    android:id="@+id/pin_clinic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/fillcolor"
+                    android:hint="@string/pin"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="30dp">
+                <EditText
+                    android:id="@+id/phone_clinic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/fillcolor"
+                    android:hint="@string/speciality"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:inputType="phone"/>
+                <Button
+                    android:id="@+id/map_coord"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonshape"
+                    android:gravity="center"
+                    android:shadowColor="#c5c5d5"
+                    android:shadowDx="2"
+                    android:shadowDy="4"
+                    android:shadowRadius="2"
+                    android:text="Set MAP coord" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF6200" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:background="#C5C5D5"
+                android:gravity="left"
+                android:padding="10dp"
+                android:shadowColor="#a4a4a4"
+                android:shadowDy="-5"
+                android:shadowRadius="5"
+                android:text="Working Hours and Weekly Offs"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Time : 09.00 AM End Time : 09.00 PM"
+                android:textSize="17sp"
+                android:padding="5dp"
+                android:layout_marginBottom="30dp"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="7">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MON"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:background="#FFCC80"/>
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sb_tint_color_1"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        app:kswTintColor="#FF5449"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TUE"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:background="#FFCC80"/>
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sb_tint_color_2"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        app:kswTintColor="#FF5449"
+                        android:layout_gravity="center"/>
+                </LinearLayout>                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WED"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:background="#FFCC80"/>
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_tint_color_3"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:kswTintColor="#FF5449"
+                    android:layout_gravity="center"/>
+            </LinearLayout>                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="THU"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:background="#FFCC80"/>
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_tint_color_4"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:kswTintColor="#FF5449"
+                    android:layout_gravity="center"/>
+            </LinearLayout>                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FRI"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:background="#FFCC80"/>
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_tint_color_5"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:kswTintColor="#FF5449"
+                    android:layout_gravity="center"/>
+            </LinearLayout>                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SAT"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:background="#FFCC80"/>
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_tint_color_6"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:kswTintColor="#FF5449"
+                    android:layout_gravity="center"/>
+            </LinearLayout>                <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUN"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:background="#FFCC80"/>
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_tint_color_7"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:kswTintColor="#FF5449"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:text="Daily slots"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/slots"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/fillcolor"
+                    android:hint="@string/no_of_slots"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:inputType="number"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:text="02 walkin OPD after"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/after_slots"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/fillcolor"
+                    android:hint="@string/afterslots"
+                    android:textSize="12dp"
+                    android:layout_weight="1"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF6200"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
