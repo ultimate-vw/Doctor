@@ -68,12 +68,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.outofoffice :
                         Intent intent3 = new Intent(getApplicationContext(),outofoffice.class);
                         startActivity(intent3);
+                        break;
 
 
 
-                    case R.id.allappointments :
+                    case R.id.referandearn :
                         Intent intent4 = new Intent(getApplicationContext(),ReferAndEarn.class);
                         startActivity(intent4);
+                        break;
 
                 }
                 return false;
