@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".support" />
         <activity android:name=".MyProfile" />
@@ -22,7 +29,7 @@
         <activity android:name=".outofoffice" />
         <activity android:name=".AllAppointments" />
         <activity android:name=".TestTable" />
-        <activity android:name=".ReferAndEarn"></activity>
+        <activity android:name=".ReferAndEarn" />
     </application>
 
 </manifest>

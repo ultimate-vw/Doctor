@@ -30,6 +30,7 @@ dependencies {
     compile 'com.kyleduo.switchbutton:library:1.4.6'
     compile 'com.github.npanigrahy:Custom-Calendar-View:v1.0'
     compile 'com.github.miguelbcr:TableFixHeaders-Wrapper:0.2.0'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
     testCompile 'junit:junit:4.12'
 }
 repositories {
